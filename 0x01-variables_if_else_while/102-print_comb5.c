@@ -14,7 +14,7 @@ int main(void)
 		{
 			for (c = a; c < 10; c++)
 			{
-				for (d = b + 1; d < 10; d++)
+				for (d = 0; d < 10; d++)
 				{
 					putchar('0' + a);
 					putchar('0' + b);
