@@ -20,12 +20,12 @@ void times_table(void)
 					continue;
 				}
 				_putchar(44);
-				_putchar(46);
+				_putchar(32);
 				if ((mul + n) >= 10)
 				{
 					continue;
 				}
-				_putchar(46);
+				_putchar(32);
 			}
 			else
 			{
@@ -38,7 +38,7 @@ void times_table(void)
 					continue;
 				}
 				_putchar(44);
-				_putchar(46);
+				_putchar(32);
 			}
 		}
 		_putchar('\n');
