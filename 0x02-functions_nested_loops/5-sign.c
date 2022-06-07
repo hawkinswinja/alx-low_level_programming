@@ -2,7 +2,7 @@
 /**
  * print_sign - prints the sign bit of numbers
  * @n: number to check sign value
- * Returns: 1 for +, 0 for 0 and -1 for -ve
+ * Return: 1 for +, 0 for 0 and -1 for -ve
  */
 int print_sign(int n)
 {
