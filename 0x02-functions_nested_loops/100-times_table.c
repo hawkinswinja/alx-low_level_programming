@@ -43,18 +43,18 @@ void print_times_table(int n)
 				{
 					continue;
 				}
-				_putchar(44);
-				_putchar(46);
+				_putchar(32);
+				_putchar(32);
 				if ((mul + a) > 99)
 				{
 					continue;
 				}
-				_putchar(46);
+				_putchar(32);
 				if ((mul + a) > 10)
 				{
 					continue;
 				}
-				_putchar(46);
+				_putchar(32);
 			}
 			_putchar('\n');
 		}
