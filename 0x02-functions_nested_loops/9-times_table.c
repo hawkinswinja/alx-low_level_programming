@@ -21,7 +21,7 @@ void times_table(void)
 				}
 				_putchar(44);
 				_putchar(46);
-				if (n == 2 && mul == 8)
+				if ((mul + n) >= 10)
 				{
 					continue;
 				}
