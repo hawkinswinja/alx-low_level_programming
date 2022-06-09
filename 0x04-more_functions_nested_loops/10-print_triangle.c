@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_triangle - print triangle using #
  * @size: base of the triangle
@@ -12,7 +13,7 @@ void print_triangle(int size)
 	}
 	else
 	{
-		int h, b;
+		int h, c, b;
 
 		for (h = 1; h <= size; h++)
 		{
