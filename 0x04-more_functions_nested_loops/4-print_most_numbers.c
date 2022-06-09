@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_most_numbers - skip 2 and 4
  * Return: void
@@ -13,7 +14,7 @@ void print_most_numbers(void)
 		{
 			continue;
 		}
-		_putchar(i);
+		printf("%d", i);
 	}
-	_putchar('\n');
+	putchar('\n');
 }
