@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_most_numbers - skip 2 and 4
  * Return: void
@@ -8,13 +7,13 @@ void print_most_numbers(void)
 {
 	int i;
 
-	for (i = 48; i >= 57; i++)
+	for (i = 48; i <= 57; i++)
 	{
 		if (i == 50 || i == 52)
 		{
 			continue;
 		}
-		printf("%d", i);
+		_putchar(i);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
