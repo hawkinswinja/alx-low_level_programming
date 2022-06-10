@@ -1,12 +1,11 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * more_numbers - print 0 to 14
  * Return: void
  */
 void more_numbers(void)
 {
-	int i,o,n;
+	int i, o, n;
 
 	for (o = 0; o < 10; o++)
 	{
@@ -16,20 +15,15 @@ void more_numbers(void)
 			{
 				if (n == 1)
 				{
-					putchar(49);
+					_putchar(49);
 				}
-				putchar(i);
+				_putchar(i);
 				if (n == 1 && i == 52)
 				{
 					break;
 				}
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
-}
-int main()
-{
-	more_numbers();
-	return (0);
 }
