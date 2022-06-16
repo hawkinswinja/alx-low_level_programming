@@ -13,8 +13,27 @@ char *string_toupper(char *str)
 	{
 		if (str[i] + '0' > 97 && str[i] + '0' < 123)
 		{
-			str[i] = (str[i] - 32);
+			str[i] = (str[i] + '0' - 32);
 		}
 	}
 	return (str);
+}
+int main(void)
+
+{
+
+	    char str[] = "Look up!\n";
+
+	        char *ptr;
+
+
+
+		    ptr = string_toupper(str);
+
+		        printf("%s", ptr);
+
+			    printf("%s", str);
+
+			        return (0);
+
 }
