@@ -7,21 +7,13 @@
  */
 char *cap_string(char *src)
 {
-	char *s = ",.?;\"(){}!";
+	char *s = "\t ,.?;\"()\n{}!";
 	int i, n;
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
 		if (i == 0)
 		{
-			if (src[i] > 96 && src[i] < 123)
-			{
-				src[i] -= 32;
-			}
-		}
-		if (src[i] == ' ' || src[i] == '\n' || src[i] == '\t')
-		{
-			++i;
 			if (src[i] > 96 && src[i] < 123)
 			{
 				src[i] -= 32;
@@ -38,6 +30,7 @@ char *cap_string(char *src)
 					{
 						src[i] -= 32;
 					}
+					break;
 				}
 			}
 		}
