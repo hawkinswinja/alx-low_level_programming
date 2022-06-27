@@ -10,9 +10,14 @@
 char *_strdup(char *str)
 {
 	int i = strlen(str) + 1;
-	char *d = malloc(sizeof(char) * i);
+	char *d;
 
-	if (str == '\0' || d == NULL)
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	d = malloc(sizeof(char) * i);
+	if (d == NULL)
 	{
 		return (NULL);
 	}
