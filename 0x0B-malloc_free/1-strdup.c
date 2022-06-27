@@ -9,10 +9,10 @@
   */
 char *_strdup(char *str)
 {
-	int i = strlen(str);
+	int i = strlen(str) + 1;
 	char *d = malloc(sizeof(char) * i);
 
-	if (str == NULL || d == NULL)
+	if (str == '\0' || d == NULL)
 	{
 		return (NULL);
 	}
