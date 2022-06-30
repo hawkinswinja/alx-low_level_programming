@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (ptr == NULL)
 	{
 		free(ptr);
-		return (NULL);
+		return (0);
 	}
 	strcpy(ptr, s1);
 	strncat(ptr, s2, n);
