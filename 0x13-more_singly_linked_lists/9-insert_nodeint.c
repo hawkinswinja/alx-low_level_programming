@@ -20,6 +20,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		bfr = temp;
 		temp = temp->next;
 		i++;
+		if (i == idx && temp == NULL)
+			return (NULL);
 	}
 	node->n = n;
 	node->next = bfr->next;
