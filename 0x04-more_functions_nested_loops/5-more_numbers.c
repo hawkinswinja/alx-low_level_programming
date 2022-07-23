@@ -30,8 +30,3 @@ void more_numbers(void)
 		a++;
 	}
 }
-int main(void)
-{
-    more_numbers();
-    return (0);
-}
