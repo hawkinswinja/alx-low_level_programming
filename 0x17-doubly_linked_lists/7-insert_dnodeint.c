@@ -9,15 +9,21 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int i = 0;
-	dlistint_t *temp = head;
-	
+	dlistint_t *temp = *h;
+	dlistint_t *next;
+	dlistint_t *bfr;
 
 	while (temp != NULL)
 	{
-		if (n == index)
-			;
+		if (i == idx)
+		{
+			bfr = temp->prev;
+			next = add_dnodeint(&temp, n);
+			bfr->next = next;
+			return (*h);
+		}
 		temp = temp->next;
-		n++;
+		i++;
 	}
 	return (NULL);
 }
