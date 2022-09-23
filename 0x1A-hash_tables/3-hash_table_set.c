@@ -32,11 +32,3 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	ht->array[index] = new;
 	return (1);
 }
-int main(void)
-{
-    hash_table_t *ht;
-
-    ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
-    return (EXIT_SUCCESS);
-}
