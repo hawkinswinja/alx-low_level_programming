@@ -13,7 +13,7 @@ int binary_search(int *array, size_t size, int value)
 	int l = 0;
 	int r = size - 1;
 
-	if (size <= 0 || array == NULL || value == NULL)
+	if (size <= 0 || array == NULL)
 		return (-1);
 	while (l <= r)
 	{
@@ -28,8 +28,8 @@ int binary_search(int *array, size_t size, int value)
 		else
 			r = m - 1;
 	}
+	return (-1);
 }
-
 /**
  * print_array - print values of array
  * @list: array to print
